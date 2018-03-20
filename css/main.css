@@ -15,7 +15,7 @@ body {
     display: flex;
     -webkit-flex-direction: row;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     overflow: auto;
     flex-wrap: wrap;
     flex-basis: auto;
@@ -34,7 +34,7 @@ body {
     border-top-left-radius: 8px;
     overflow-wrap: break-word;
     overflow: auto;
-    resize:both;
+    resize: both;
 }
 
 .title {

@@ -1,0 +1,68 @@
+/*
+** file: css/main.css
+** description: custom styling for "html/main.html" file
+*/
+body {
+	margin: 0;
+    padding: 0;
+    color: black;
+	background: whitesmoke;
+	font: 14px Baskerville, "Palatino Linotype", "Times New Roman", Times, serif;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow: auto;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    height: 90%;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.container {
+    display: flex;
+    height: 30vh;
+    width: 25vw;
+    padding: 1rem;
+    text-align: left;
+    background-color: white;
+    border: solid 2px grey;
+    border-top-left-radius: 8px;
+    overflow-wrap: break-word;
+    overflow: auto;
+}
+
+.title {
+    background: seagreen;
+    color: white;
+}
+
+img#main-image {
+    display: block;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div {
+    line-height: 1.5;
+    font-size: 1.2rem;
+
+}
+
+button {
+    display: inline-block;
+    background-color: #47f;
+    color: white;
+    font-size: 1.4rem;
+    width: 45%;
+    margin: 0 auto;
+    border-color: white;
+    border-radius: 5px;
+    
+}

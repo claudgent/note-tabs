@@ -36,7 +36,7 @@ function createElement(el) {
   newTitle.innerHTML = el.title;
   newContent.innerHTML = el.content;
 
-  setAttrs(newNote, { id: el.id });
+  setAttrs(newNote, { id: el.id, class: 'note' });
   setAttrs(newTitle, { class: 'title', contenteditable: 'true' });
   setAttrs(newContent, { class: 'container', contenteditable: 'true' });
 
@@ -116,7 +116,7 @@ const createNewNoteDiv = () => {
   const uniqueID = Math.floor(Math.random() * 100);
 
   // add attributes to new elements
-  setAttrs(newNote, { id: uniqueID });
+  setAttrs(newNote, { id: uniqueID, class: 'note' });
   setAttrs(newContent, { class: 'container', contenteditable: 'true' });
   setAttrs(newTitle, { class: 'title', contenteditable: 'true' });
 
@@ -132,4 +132,4 @@ boxBtn.addEventListener('click', () => {
 });
 
 // SIMPLIFY?
-//= ============================================================
+//=============================================================

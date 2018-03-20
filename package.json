@@ -14,11 +14,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
-  "author": "",
+  "repository": "https://github.com/claudgent/note-tabs",
+  "author": "Claudio Gentile <claudgent@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": ""

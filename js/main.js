@@ -1,5 +1,6 @@
 const boxBtn = document.getElementById('newNoteBtn');
 const saveBtn = document.getElementById('saveNoteBtn');
+const delAll = document.getElementById('deleteAll');
 const flexBox = document.getElementById('outer-div');
 
 const boxStorage = {
@@ -131,5 +132,19 @@ boxBtn.addEventListener('click', () => {
   createNewNoteDiv();
 });
 
-// SIMPLIFY?
+// Delete All
 //=============================================================
+
+const deleteAllDivs = () => {
+  chrome.storage.sync.clear();
+  const outerDiv = document.getElementById('outer-div');
+  boxStorage.boxes = [];
+  while (outerDiv.firstChild) {
+    outerDiv.removeChild(outerDiv.firstChild);
+  }
+  console.log('cleared');
+}
+
+delAll.addEventListener('click', () => {
+  deleteAllDivs();
+});

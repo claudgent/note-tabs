@@ -7,7 +7,7 @@ body {
     padding: 0;
     color: black;
 	background: whitesmoke;
-	font: 14px Baskerville, "Palatino Linotype", "Times New Roman", Times, serif;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .flex-container {
@@ -21,32 +21,28 @@ body {
     flex-basis: auto;
     height: 90%;
     width: 90%;
-    margin: 10px auto;
+    margin: 0 auto;
 }
 
-.container {
-    display: flex;
+.note {
     height: 30vh;
     width: 25vw;
-    padding: 1rem;
+    padding: .5em;
     text-align: left;
     background-color: white;
-    border: solid 2px grey;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-top-left-radius: 8px;
     overflow-wrap: break-word;
     overflow: auto;
+    resize:both;
 }
 
 .title {
     background: seagreen;
+    border-top-left-radius: 8px;
     color: white;
-}
-
-img#main-image {
-    display: block;
-    margin-top: 5px;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 1.2em;
+    padding: .25em;
 }
 
 div {

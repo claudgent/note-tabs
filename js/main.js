@@ -133,7 +133,7 @@ boxBtn.addEventListener('click', () => {
 });
 
 // Delete All
-//=============================================================
+// =============================================================
 
 const deleteAllDivs = () => {
   chrome.storage.sync.clear();
@@ -143,7 +143,7 @@ const deleteAllDivs = () => {
     outerDiv.removeChild(outerDiv.firstChild);
   }
   console.log('cleared');
-}
+};
 
 delAll.addEventListener('click', () => {
   deleteAllDivs();

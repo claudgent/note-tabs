@@ -1,64 +1,81 @@
-/*
-** file: css/main.css
-** description: custom styling for "html/main.html" file
-*/
-body {
-	margin: 0;
+* {
+    margin: 0;
     padding: 0;
+}
+
+body {
+    box-sizing: border-box;
     color: black;
 	background: whitesmoke;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.flex-container {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-    flex-direction: row;
-    justify-content: space-evenly;
-    overflow: auto;
-    flex-wrap: wrap;
-    flex-basis: auto;
-    height: 90%;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.note {
-    height: 30vh;
-    width: 25vw;
-    padding: .5em;
-    text-align: left;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-top-left-radius: 8px;
-    overflow-wrap: break-word;
-    overflow: auto;
-    resize: both;
-}
-
-.title {
-    background: seagreen;
-    border-top-left-radius: 8px;
-    color: white;
-    font-size: 1.2em;
-    padding: .25em;
-}
-
 div {
-    line-height: 1.5;
+    line-height: 1.5rem;
     font-size: 1.2rem;
 
 }
 
 button {
     display: inline-block;
-    background-color: #47f;
+    background-color: cornflowerblue;
+    bottom: 0;
     color: white;
     font-size: 1.4rem;
-    width: 45%;
+    width: 33.1%;
     margin: 0 auto;
     border-color: white;
-    border-radius: 5px;
-    
+    border-radius: 5px;   
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.logo {
+    background-color: cornflowerblue;
+    border-top-left-radius: 8px;
+    color: white;;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    margin: 0 auto;
+    height: 90%;
+    width: 100%;
+    overflow: auto;
+}
+
+.note {
+    flex: 1 1 10vw;
+    margin: 1%;
+    min-width: 25%;
+    height: auto;
+    text-align: left;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-top-left-radius: 8px;
+
+}
+
+.title {
+    background-color: seagreen;
+    border-top-left-radius: 8px;
+    color: white;
+    font-size: 1.2em;
+    padding: .25em;
+}
+
+.container {
+    height: 80%;
+    margin: 1em;
+}
+.container:focus { 
+    outline: none;
+}
+
+#deleteAll {
+    background-color: firebrick;
 }
